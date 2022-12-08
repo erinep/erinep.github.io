@@ -1,0 +1,145 @@
+:root{
+    --grey: #393E46;
+    --accent: #6ddc9f; 
+    --white: #e0e0e0;
+}
+
+body{
+    background-color: var(--white);
+}
+
+nav{
+    background-color: var(--grey);
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    border-bottom: 10px var(--accent) solid;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+nav a {
+    color: var(--white);
+}
+
+ nav a:hover {
+    color: var(--accent);
+}
+
+#name {
+    color: var(--accent);
+}
+
+main{
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1100px;
+}
+
+main li{
+    list-style-type: none;
+}
+
+main h2 {
+    color: var(--grey);
+    margin: 10px 0 0 0;
+}
+
+section {
+    margin: 30px auto;
+    flex-direction: column;
+}
+
+#overview {
+    flex-direction: row;
+}
+
+#honesty {
+    flex-direction: row;
+}
+
+#honesty div{
+    flex: 1 ;
+    padding: 10px;
+}
+
+#links a{
+    margin: 0 15px;
+    color: var(--grey);
+}
+
+#links a i{
+    padding:0;
+    border: 0;
+    color: var(--grey);
+}
+
+.box{
+    background-color: var(--grey);
+    color: var(--white);
+    margin: 50px;
+    padding: 5px 25px;
+    box-shadow: 10px 10px var(--accent);
+}
+
+form {
+    box-shadow: 0 0;
+    border: 0;
+
+}
+
+input[type="text"],
+input[type="email"],
+select{
+   background-color: white;
+}
+
+a b, a strong, button, input[type="submit"]{
+    background-color: var(--grey);
+    border: 0;
+    color: var(--white);
+}
+
+a b, a strong, button, input[type="submit"]:hover{
+    background-color: var(--accent);
+    border: 0;
+    color: black;
+}
+
+footer{
+    background-color: var(--grey);
+    border-top: 10px solid var(--accent);
+    width: 100%;
+    max-width: 100%;
+    color: var(--white);
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+img{
+    margin: 50px;
+}
+
+@media screen and (max-width: 400px){
+    body{
+        font-size: 1.3em;
+    }
+
+    .box{
+        margin: 45px 0;
+    }
+
+    nav{
+        height: 45px;
+    }
+
+    #menu{
+        visibility: collapse;
+    }
+}

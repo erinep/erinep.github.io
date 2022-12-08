@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Erin Patterson</title>
+        <meta name="author" content="Erin Patterson">
+        <meta name="description" content="Portfolio site">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
+        <script src="https://kit.fontawesome.com/0c4338b4e0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="icon" href="favicon.png" />
+
+    </head>
+    <body>
+        
+        <nav>
+            <a id="name" href=""> <h1>Erin Patterson </h1></a>
+            <ul id="menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#ed">Education</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#honesty">Honesty Declaration</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <section id="overview">
+                <div class="overview-text">
+                    <h2>Erin Patterson</h2>
+                    <p>Software Developer </br>
+                        Toronto, Ontario, Canada </br>
+                    <i class="fa-solid fa-envelope"></i> erinpatt6@gmail.com</p>
+                    <ul>
+                        <li><i class="fa-brands fa-java"></i> java</li>
+                        <li>c++</li>
+                        <li> <i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li> <i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-js"></i> Javascript</li>
+                    </ul>
+                    <div id = links>
+                            <a href="https://github.com/erinep"> <i class="fa-brands fa-github"></i> Github </a>
+                            <a href="ErinPatterson_Resume_dec2022.pdf" download><i class="fa-solid fa-file-pdf"> </i> Resume</a>
+                    </div>
+                    </div>
+                <img id="profile" width=400 src="./erinv1.jpg" alt="Profile picture">
+            </section>
+    
+            <section id="ed">
+                <h2>Education</h2>
+                <div class="box-contatiner">
+                    <div class="box">
+                        <h3 >Computer Programming Diploma</h3>
+                        <p> 2022-2023 <br>Seneca College</p>
+                    </div>
+        
+                    <div class="box">
+                    <h3>Bachelors of Mechanical Engineering</h3>
+                    
+                    <p> 2017-2022 <br> University of Western Ontario</p>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <section id="work">
+                <h2>Work Experience</h2>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Public Service and Procurement Canada</h3>
+                        <p>2020-2021 <br> Mechanical Engineering Internship </p>
+                    </div>
+        
+                    <div class="box">
+                        <h3>ILSCO of Canada </h3>
+                        <p>Summer 2019 <br> Manufacturing Intern</p>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="contact">
+
+                <h2>Contact Form</h2>
+
+                <form name="portfolio-form" action="https://httpbin.org/post" method="post">
+        
+                    
+                    <label for="name">Name</label>
+                    <input 
+                        id="name" 
+                        name="name" 
+                        type="text"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input 
+                        id="emai" 
+                        name="email" 
+                        type="email"
+                        required
+                    >
+                    
+                    <label for="address">Address</label>
+                    <input 
+                        id="address" 
+                        name="address" 
+                        type="text"
+                        required
+                    >
+
+                    <label for="city">City</label>
+                    <input 
+                        id="city" 
+                        name="city" 
+                        type="text"
+                        required
+                    >
+
+                    <label for="province">Province</label>
+                    <select id="province" >
+                        <option value="-">-</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NS">Nova Soctia</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YK">Yukon</option>
+                    </select>
+
+                    <label for="city">City</label>
+                    <input 
+                        id="city" 
+                        name="city" 
+                        type="text"
+                        required
+                    >
+                
+                    <label for="postalCode">Postal Code</label>
+                    <input 
+                        id="postalCode" 
+                        name="postalCode" 
+                        type="text"
+                        pattern="^[A-Za-z][0-9][A-Za-z][ -]?[0-9][A-Za-z][0-9]$"
+                        required
+                    >
+
+                    <label id="formSubjectElement" hidden>Subject
+                        <input
+                            id="subject"
+                            name="subject"
+                            type="text"
+                        >
+                    </label>
+                
+                    <div class="buttons">
+                    <input id="submitForm" name="submit" value="submit" type="submit">
+                    <input id="clearForm" name="clear" value="clear" type="reset">
+                    </div>
+                </form>
+
+                <!--
+                <h2>Contact Form</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <input type="text">
+
+                    <input type="radio" name="context" value=""
+
+                    <input type="submit">
+                </form>
+                 -->
+            </section>
+    
+            <section id="honesty">
+                
+                <div id="text">
+                    <h2>Honesty Declaration</h2>
+                    <p>
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                    </p>
+                    <p><b>Date:</b> <time datetime="2022-12-07">December 7th, 2022</time> </p>
+                </div>
+                <div id="info">
+                    <h2>Basic Information</h2>
+                    <p>
+                        Age: 24 </br>
+                        Email: erinpatt6@gmail.com </br>
+                        Language: English </br>
+                        Class Section: NAA<br>
+                        Student ID: 038791067 </br>
+                        Instructor: David Humphrey
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+        <p> Erin Patterson &copy; 2022</p>
+        </footer>
+
+    </body>
+</html>
